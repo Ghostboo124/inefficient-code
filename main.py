@@ -6,6 +6,9 @@ A Really inefficient way of putting together a sentence
 import random
 import threading
 from time import sleep
+import os
+
+# Letters
 import lotsOfLetters.a
 import lotsOfLetters.b
 import lotsOfLetters.c
@@ -370,9 +373,21 @@ thread2Return = t2.join()
 thread3Return = t3.join()
 
 print("Joined!")
+os.system("pause")
 
 sentenceUs = thread0Return + thread1Return + thread2Return + thread3Return
+sentenceUsRandom = sentenceUs
+
 if sentenceUs == sentenceUser:
     print("Uhh this should be impossible")
+elif sentenceUs != sentenceUser:
+    print("About to start randomising the generated sentence")
+    while sentenceUsRandom != sentenceUser:
+        sentenceUsRandomList = list(sentenceUsRandom)
+        random.shuffle(sentenceUsRandomList)
+        sentenceUsRandom = ''.join(sentenceUsRandomList)
+        print("    Random Sentence: " + sentenceUsRandom)
+    sentenceUsRandom = sentenceUs
+    print("Got It!", end=": ")
 
 print(sentenceUs)
