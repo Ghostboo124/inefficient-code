@@ -36,6 +36,12 @@ import lotsOfLetters.x
 import lotsOfLetters.y
 import lotsOfLetters.z
 
+# Threads
+from threadCode import thread0
+from threadCode import thread1
+from threadCode import thread2
+from threadCode import thread3
+
 
 sentenceUser = input("What is the sentence you want to make (no more than 32 chars): ")
 sentenceUs = ""
@@ -69,264 +75,11 @@ for letter in sentenceUser:
     counter += 1
 
 
-def thread0(que: list, sentence: str) -> str:
-    """
-    The script for thread 0
-    - que:      The que that is to be read from
-    - sentence: The sentence to put the output into
-    """
-    returnSentence = ""
-    for i in que:
-        if i == "a":
-            returnSentence += lotsOfLetters.a.a
-        if i == "b":
-            returnSentence += lotsOfLetters.b.b
-        if i == "c":
-            returnSentence += lotsOfLetters.c.c
-        if i == "d":
-            returnSentence += lotsOfLetters.d.d
-        if i == "e":
-            returnSentence += lotsOfLetters.e.e
-        if i == "f":
-            returnSentence += lotsOfLetters.f.f
-        if i == "g":
-            returnSentence += lotsOfLetters.g.g
-        if i == "h":
-            returnSentence += lotsOfLetters.h.h
-        if i == "i":
-            returnSentence += lotsOfLetters.i.i
-        if i == "j":
-            returnSentence += lotsOfLetters.j.j
-        if i == "k":
-            returnSentence += lotsOfLetters.k.k
-        if i == "l":
-            returnSentence += lotsOfLetters.l.l
-        if i == "m":
-            returnSentence += lotsOfLetters.m.m
-        if i == "n":
-            returnSentence += lotsOfLetters.n.n
-        if i == "o":
-            returnSentence += lotsOfLetters.o.o
-        if i == "p":
-            returnSentence += lotsOfLetters.p.p
-        if i == "q":
-            returnSentence += lotsOfLetters.q.q
-        if i == "r":
-            returnSentence += lotsOfLetters.r.r
-        if i == "s":
-            returnSentence += lotsOfLetters.s.s
-        if i == "t":
-            returnSentence += lotsOfLetters.t.t
-        if i == "u":
-            returnSentence += lotsOfLetters.u.u
-        if i == "v":
-            returnSentence += lotsOfLetters.v.v
-        if i == "w":
-            returnSentence += lotsOfLetters.w.w
-        if i == "x":
-            returnSentence += lotsOfLetters.x.x
-        if i == "y":
-            returnSentence += lotsOfLetters.y.y
-        if i == "z":
-            returnSentence += lotsOfLetters.z.z
-        sleep(1)
-    sentence += returnSentence
-    return returnSentence
 
-def thread1(que: list, sentence: str) -> str:
-    """
-    The script for thread 1
-    - que:      The que that is to be read from
-    - sentence: The sentence to put the output into
-    """
-    returnSentence = ""
-    for i in que:
-        if i == "a":
-            returnSentence += lotsOfLetters.a.a
-        if i == "b":
-            returnSentence += lotsOfLetters.b.b
-        if i == "c":
-            returnSentence += lotsOfLetters.c.c
-        if i == "d":
-            returnSentence += lotsOfLetters.d.d
-        if i == "e":
-            returnSentence += lotsOfLetters.e.e
-        if i == "f":
-            returnSentence += lotsOfLetters.f.f
-        if i == "g":
-            returnSentence += lotsOfLetters.g.g
-        if i == "h":
-            returnSentence += lotsOfLetters.h.h
-        if i == "i":
-            returnSentence += lotsOfLetters.i.i
-        if i == "j":
-            returnSentence += lotsOfLetters.j.j
-        if i == "k":
-            returnSentence += lotsOfLetters.k.k
-        if i == "l":
-            returnSentence += lotsOfLetters.l.l
-        if i == "m":
-            returnSentence += lotsOfLetters.m.m
-        if i == "n":
-            returnSentence += lotsOfLetters.n.n
-        if i == "o":
-            returnSentence += lotsOfLetters.o.o
-        if i == "p":
-            returnSentence += lotsOfLetters.p.p
-        if i == "q":
-            returnSentence += lotsOfLetters.q.q
-        if i == "r":
-            returnSentence += lotsOfLetters.r.r
-        if i == "s":
-            returnSentence += lotsOfLetters.s.s
-        if i == "t":
-            returnSentence += lotsOfLetters.t.t
-        if i == "u":
-            returnSentence += lotsOfLetters.u.u
-        if i == "v":
-            returnSentence += lotsOfLetters.v.v
-        if i == "w":
-            returnSentence += lotsOfLetters.w.w
-        if i == "x":
-            returnSentence += lotsOfLetters.x.x
-        if i == "y":
-            returnSentence += lotsOfLetters.y.y
-        if i == "z":
-            returnSentence += lotsOfLetters.z.z
-        sleep(1)
-    sentence += returnSentence
-    thread1Return = returnSentence
-    return returnSentence
 
-def thread2(que: list, sentence: str) -> str:
-    """
-    The script for thread 2
-     - que:      The que that is to be read from
-     - sentence: The sentence to put the output into
-    """
-    returnSentence = ""
-    for i in que:
-        if i == "a":
-            returnSentence += lotsOfLetters.a.a
-        if i == "b":
-            returnSentence += lotsOfLetters.b.b
-        if i == "c":
-            returnSentence += lotsOfLetters.c.c
-        if i == "d":
-            returnSentence += lotsOfLetters.d.d
-        if i == "e":
-            returnSentence += lotsOfLetters.e.e
-        if i == "f":
-            returnSentence += lotsOfLetters.f.f
-        if i == "g":
-            returnSentence += lotsOfLetters.g.g
-        if i == "h":
-            returnSentence += lotsOfLetters.h.h
-        if i == "i":
-            returnSentence += lotsOfLetters.i.i
-        if i == "j":
-            returnSentence += lotsOfLetters.j.j
-        if i == "k":
-            returnSentence += lotsOfLetters.k.k
-        if i == "l":
-            returnSentence += lotsOfLetters.l.l
-        if i == "m":
-            returnSentence += lotsOfLetters.m.m
-        if i == "n":
-            returnSentence += lotsOfLetters.n.n
-        if i == "o":
-            returnSentence += lotsOfLetters.o.o
-        if i == "p":
-            returnSentence += lotsOfLetters.p.p
-        if i == "q":
-            returnSentence += lotsOfLetters.q.q
-        if i == "r":
-            returnSentence += lotsOfLetters.r.r
-        if i == "s":
-            returnSentence += lotsOfLetters.s.s
-        if i == "t":
-            returnSentence += lotsOfLetters.t.t
-        if i == "u":
-            returnSentence += lotsOfLetters.u.u
-        if i == "v":
-            returnSentence += lotsOfLetters.v.v
-        if i == "w":
-            returnSentence += lotsOfLetters.w.w
-        if i == "x":
-            returnSentence += lotsOfLetters.x.x
-        if i == "y":
-            returnSentence += lotsOfLetters.y.y
-        if i == "z":
-            returnSentence += lotsOfLetters.z.z
-        sleep(1)
-    sentence += returnSentence
-    thread2Return = returnSentence
-    return returnSentence
 
-def thread3(que: list, sentence: str) -> str:
-    """
-    The script for thread 3
-    - que:      The que that is to be read from
-    - sentence: The sentence to put the output into
-    """
-    returnSentence = ""
-    for i in que:
-        if i == "a":
-            returnSentence += lotsOfLetters.a.a
-        if i == "b":
-            returnSentence += lotsOfLetters.b.b
-        if i == "c":
-            returnSentence += lotsOfLetters.c.c
-        if i == "d":
-            returnSentence += lotsOfLetters.d.d
-        if i == "e":
-            returnSentence += lotsOfLetters.e.e
-        if i == "f":
-            returnSentence += lotsOfLetters.f.f
-        if i == "g":
-            returnSentence += lotsOfLetters.g.g
-        if i == "h":
-            returnSentence += lotsOfLetters.h.h
-        if i == "i":
-            returnSentence += lotsOfLetters.i.i
-        if i == "j":
-            returnSentence += lotsOfLetters.j.j
-        if i == "k":
-            returnSentence += lotsOfLetters.k.k
-        if i == "l":
-            returnSentence += lotsOfLetters.l.l
-        if i == "m":
-            returnSentence += lotsOfLetters.m.m
-        if i == "n":
-            returnSentence += lotsOfLetters.n.n
-        if i == "o":
-            returnSentence += lotsOfLetters.o.o
-        if i == "p":
-            returnSentence += lotsOfLetters.p.p
-        if i == "q":
-            returnSentence += lotsOfLetters.q.q
-        if i == "r":
-            returnSentence += lotsOfLetters.r.r
-        if i == "s":
-            returnSentence += lotsOfLetters.s.s
-        if i == "t":
-            returnSentence += lotsOfLetters.t.t
-        if i == "u":
-            returnSentence += lotsOfLetters.u.u
-        if i == "v":
-            returnSentence += lotsOfLetters.v.v
-        if i == "w":
-            returnSentence += lotsOfLetters.w.w
-        if i == "x":
-            returnSentence += lotsOfLetters.x.x
-        if i == "y":
-            returnSentence += lotsOfLetters.y.y
-        if i == "z":
-            returnSentence += lotsOfLetters.z.z
-        sleep(1)
-    sentence += returnSentence
-    thread3Return = returnSentence
-    return returnSentence
+
+
 
 class ThreadWithReturnValue(threading.Thread):
     def __init__(self, group=None, target=None, name=None,
@@ -351,10 +104,10 @@ print(thread3(que3,sentenceUs))
 """
 
 print("About to create")
-t0 = ThreadWithReturnValue(target=thread1, args=(que0,sentenceUs,))
-t1 = ThreadWithReturnValue(target=thread1, args=(que1,sentenceUs,))
-t2 = ThreadWithReturnValue(target=thread2, args=(que2,sentenceUs,))
-t3 = ThreadWithReturnValue(target=thread3, args=(que3,sentenceUs,),)
+t0 = ThreadWithReturnValue(target=thread0.thread0Letters, args=(que0,sentenceUs,))
+t1 = ThreadWithReturnValue(target=thread1.thread1Letters, args=(que1,sentenceUs,))
+t2 = ThreadWithReturnValue(target=thread2.thread2Letters, args=(que2,sentenceUs,))
+t3 = ThreadWithReturnValue(target=thread3.thread3Letters, args=(que3,sentenceUs,),)
 
 print("Created!")
 print("About to start")
