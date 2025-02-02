@@ -1,2 +1,5 @@
 /.vscode
-*.pyc
+/*.pyc
+!/*
+lotsOfLetters/__pycache__/*
+threadCode/__pycache__/*

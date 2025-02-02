@@ -45,8 +45,10 @@ from threadCode import thread3
 
 if os.cpu_count() <= 4:
     print("You need more than 4 threads!")
-elif os.cpu_count >= 32:
+elif os.cpu_count() >= 32:
     print("What CPU are you running, that is more than 32 threads!")
+else:
+    print("Your CPU is supported")
 
 sentenceUser = input("What is the sentence you want to make (no more than 32 chars): ")
 sentenceUs = ""
