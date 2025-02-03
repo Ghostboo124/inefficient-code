@@ -28,6 +28,19 @@ import lotsOfLetters.w
 import lotsOfLetters.x
 import lotsOfLetters.y
 import lotsOfLetters.z
+import lotsOfLetters.one
+import lotsOfLetters.two
+import lotsOfLetters.three
+import lotsOfLetters.four
+import lotsOfLetters.five
+import lotsOfLetters.six
+import lotsOfLetters.seven
+import lotsOfLetters.eight
+import lotsOfLetters.nine
+import lotsOfLetters.exclamation
+import lotsOfLetters.question
+import lotsOfLetters.stop
+import lotsOfLetters.space
 
 # Code
 
@@ -91,6 +104,34 @@ def thread3Letters(que: list, sentence: str) -> str:
             returnSentence += lotsOfLetters.y.y
         if i == "z":
             returnSentence += lotsOfLetters.z.z
+        if i == "1":
+            returnSentence += lotsOfLetters.one.one
+        if i == "2":
+            returnSentence += lotsOfLetters.two.two
+        if i == "3":
+            returnSentence += lotsOfLetters.three.three
+        if i == "4":
+            returnSentence += lotsOfLetters.four.four
+        if i == "5":
+            returnSentence += lotsOfLetters.five.five
+        if i == "6":
+            returnSentence += lotsOfLetters.six.six
+        if i == "7":
+            returnSentence += lotsOfLetters.seven.seven
+        if i == "8":
+            returnSentence += lotsOfLetters.eight.eight
+        if i == "9":
+            returnSentence += lotsOfLetters.nine.nine
+        if i == ".":
+            returnSentence += lotsOfLetters.stop.stop
+        if i == "!":
+            returnSentence += lotsOfLetters.exclamation.exclamation
+        if i == "?":
+            returnSentence += lotsOfLetters.question.question
+        if i == " ":
+            returnSentence += lotsOfLetters.space.space
+        # if i not in ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"] or i not in ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"] or i not in [" ", ".", "?", "!"]:
+        #     returnSentence += lotsOfLetters.space.space
         sleep(1)
     sentence += returnSentence
     thread3Return = returnSentence
